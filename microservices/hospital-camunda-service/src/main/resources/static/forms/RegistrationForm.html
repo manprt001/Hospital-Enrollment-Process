@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form class="form-horizontal">
+		<div class="form-group">
+
+			<label class="control-label col-md-4">First Name: </label>
+			<div class="col-md-8">
+				<input type="text" cam-variable-name="fName"
+					cam-variable-type="String" required class="form-control">
+			</div>
+			<label class="control-label col-md-4">Last Name: </label>
+			<div class="col-md-8">
+				<input type="text" cam-variable-name="lName"
+					cam-variable-type="String" required class="form-control">
+			</div>
+			<label class="control-label col-md-4">Date of Birth: </label>
+			<div class="col-md-8">
+				<input id="dob" type="date" cam-variable-name="dob" min="1901-01-01" 
+					cam-variable-type="String" required class="form-control">
+			</div>
+		</div>
+		<script cam-script type="text/form-script">
+			document.getElementById('dob').value = '2017-08-20'
+			document.getElementById('dob').value = new Date().toISOString().substring(0,10).toString();
+			var da = new Date().toISOString().substring(0,10).toString();
+			console.log(da);
+
+	</script>
+	</form>
+</body>
+</html>

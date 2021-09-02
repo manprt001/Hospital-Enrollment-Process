@@ -38,6 +38,25 @@
       <artifactId>jaxb-impl</artifactId>
       <version>2.2.3</version>
     </dependency>
+    <!-- test coverage -->
+		<dependency>
+			<groupId>org.camunda.bpm.extension</groupId>
+			<artifactId>camunda-bpm-process-test-coverage</artifactId>
+			<version>0.3.2</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Dependency used for testing -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.camunda.bpm.assert</groupId>
+			<artifactId>camunda-bpm-assert</artifactId>
+			<version>8.0.0</version>
+			<scope>test</scope>
+		</dependency>
   </dependencies>
 
    <build>
